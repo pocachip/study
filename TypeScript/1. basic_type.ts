@@ -33,9 +33,9 @@ let list: number[] = [1, 2, 3];
 let list2: Array<number> = [1, 2, 3];
 
 // Tuple  고정된 갯수의 type Array를 표현
-let x: [string, number];
+let xx: [string, number];
 // Initailize it
-x = ["hello", 10]; // OK
+xx = ["hello", 10]; // OK
 //x = [10, "hello"]; //Error
 
 // accessing
@@ -102,9 +102,9 @@ function infiniteLoop(): never {
 
 // Object
 // object is a type that represents the non-primitive type
-declare function create(o: object | null): void;
-create({ prop: 0 }); // OK
-create(null); // OK
+declare function create1(o: object | null): void;
+create1({ prop: 0 }); // OK
+create1(null); // OK
 
 //create(42); // Error
 //create("string"); // Error
