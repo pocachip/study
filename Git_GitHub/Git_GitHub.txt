@@ -1,0 +1,55 @@
+VCS ( Version Control System )
+ - 각 파일을 이전 상태로 돌릴수 있다.
+ - 시간에 따라 수정 내용 비교 가능
+ - 누가 문제를 일으켰는지 쉽게 추적할 수 있다.
+ - 파일을 잘못 고쳤었을때 쉽게 복구 가능하다
+
+ Centralized Version Control System(CVCS)
+
+ Distributed Version Control System( DVCS )
+
+ Git 탄생 
+ Linux kernel은 대규모의 open source project입니다. 
+ 이 project의 버전관리를 위해 초기에는 BitKeeper라는 상용 DVCS를 사용했었는데 
+ 2005년도에 이 BitKeeper의 무료사용이 제고되면서 리누스 토발즈의 주도로 
+ Linux 개발 커뮤니티가 자체 VCS를 개발했는데 이게 바로 Git입니다.
+
+Git은 다음과 같은 특징을 가집니다.
+ - 단순한 구조에서 오는 빠른 속도
+ - 완벽한 분산처리
+ - branch를 사용한 비선형적 개발 가능
+ - 속도나 크기면에서 대형 Project에 적합
+
+Git의 기본
+파일을 3가지 상태로 관리 "Committed", "Modified", "Staged"
+    Committed : commit 명령으로 파일을 로컬 데이터베이스에 저장
+    Modified : 파일 수정 이후 아직 로컬 데이터베이스에 commit 하지 않은 상용태
+    Staged : 파일을 수정한 후 수정할 파일을 곧 commit 할 것이라고 표시한 상태
+
+Git의 사용영역
+    Git directory : Git이 프로젝트의 메타 데이터와 객체 데이터베이스를 저장하는 곳을 말함
+                    Local Repository 로 "git init" 명령으로 설정
+    Working directory: project의 특정 branch를 checkout한 내용이 들어 있는 폴더 입니다.
+    Staging Area : Git directory에 존재하며 단순한 파일입니다. 곧 commit할 파일에 대한 정보를
+                   가지고 있는음
+
+Git의 작업 기본 순서
+    1. Working directory에서 파일 수정
+    2. Staging Area에 수정한 파일을 Stage해서 commit할 Snapshot 생성 (git add)
+    3. Staging Area에 있는 수정된 파일을 commit해서 Git directory에 영구적인 Snapshot으로 저장(git commit)
+
+Git 환경설정파일
+    $GIT_HOME/mingw64/etc/gitconfig    모든 사용자  "git config --system"
+    $USER_HOME/.gitconfig 특정사용자  "git config --global"
+    .git/config  Git directory안에 위치하여 특정 저장소에만 적용되는 설정
+
+Git Bash에서 사용자와 Email 주소 설정
+$ git config --global user.name "Seoungjae Park"
+$ git config --global user.email "parkseou@gmail.com"
+
+Git Local Repository 생성
+1. 프로젝트 폴더 생성 
+    $mkdir Work
+    $cd Work
+    $git init
+    $git status
