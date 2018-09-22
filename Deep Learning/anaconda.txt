@@ -1,0 +1,33 @@
+"모두의 딥러닝" 조태호 지음 길벗
+깃허브 : https://github.com/gilbutITbook/006958
+
+git clone https://github.com/gilbutITbook/006948.git
+cp -r ./006958/deeplearning/* /home/taehoyo/PycharmProjects/deeplearning
+
+
+// 1. 아나콘다 설치
+
+아나콘다는 Continuum Analytics라는 곳에서 파이썬 배포판으로 453개의 파이썬 패키지를 포함하고 있다.
+http://www.continuum.io/downloads
+
+$Anaconda Prompt
+
+$conda create -n tutorial python=3.5 numpy scipy matplotlib spyder pandas seaborn scikit-learn h5py
+
+// 2.텐서플로 설치하기
+$activate tutorial
+
+$pip install tensorflow
+
+// 확인
+//python 실행 후 
+>>import tensorflow as tf
+>>print(tf.__version__)
+
+// 3. 케라스 설치하기
+$pip install keras
+>> import keras
+Using TensorFlow backend  // it's ok
+
+// 4. 파이참 설치하기기
+https://www.jetbrains.com/pycharm/download/
