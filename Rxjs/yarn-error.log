@@ -1,0 +1,41 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\kth\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add rxjs webpack webpack-dev-server typecript ts-loader
+
+PATH: 
+  C:\Users\kth\AppData\Roaming\npm;C:\Program Files\nodejs\;C:\Windows\;C:\Program Files (x86)\Python27\;C:\Program Files (x86)\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Wizvera\Delfino;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ACE_wrappers\lib;D:\SwSetup\Dwimperl\perl\bin;D:\SwSetup\Dwimperl\perl\site\bin;D:\SwSetup\Dwimperl\c\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\TortoiseHg\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Brackets\command;C:\Users\kth\AppData\Local\Programs\Python\Python36\;C:\Program Files\IBM\Bluemix\bin;C:\cygwin64\bin\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Windows\Softcamp\SDS;C:\Windows\Softcamp\SDS\x64;C:\Windows\Softcamp\SDK;C:\Windows\Softcamp\SDK\x64;C:\Users\kth\AppData\Local\atom\bin;C:\Program Files\Microsoft VS Code\bin;C:\cygwin64\bin\;C:\Users\kth\AppData\Roaming\npm
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  10.9.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "Rxjs",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/typecript: Not found
+      at Request.params.callback [as _callback] (C:\Users\kth\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:62098:18)
+      at Request.self.callback (C:\Users\kth\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:123085:22)
+      at Request.emit (events.js:182:13)
+      at Request.<anonymous> (C:\Users\kth\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:124068:10)
+      at Request.emit (events.js:182:13)
+      at IncomingMessage.<anonymous> (C:\Users\kth\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:123988:12)
+      at Object.onceWrapper (events.js:273:13)
+      at IncomingMessage.emit (events.js:187:15)
+      at endReadableNT (_stream_readable.js:1085:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
