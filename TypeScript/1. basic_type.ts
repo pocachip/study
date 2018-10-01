@@ -41,8 +41,8 @@ xx = ["hello", 10]; // OK
 // accessing
 console.log(xx[0].substr(1)); //OK
 //console.log(x[1].substr(1)); //Error, 'number' does not have 'substr'
-xxx[3] = "world"; //OK, 'string' can be assigned to 'string | number'
-console.log(xxx[5].toString()); //OK, 'string' and 'number' both have 'toString'
+xx[3] = "world"; //OK, 'string' can be assigned to 'string | number'
+console.log(xx[5].toString()); //OK, 'string' and 'number' both have 'toString'
 //x[6] = true; // Error, 'boolean' isn't 'string|number'
 
 // Enum

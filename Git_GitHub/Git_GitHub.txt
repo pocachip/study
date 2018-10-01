@@ -53,3 +53,16 @@ Git Local Repository 생성
     $cd Work
     $git init
     $git status
+
+Git file/directory 제외하기 
+1. .gitignore  파일 생성 
+# 이것은 코멘트
+# 파일이름을 넣으면 모든 디렉토리에서 해당 파일 무시
+ignore-file.txt
+
+ # /로 끝나면 해당 디렉토리 전체를 무시
+ignore-dir/
+
+ # 와일드카드도 사용가능
+ignore-file*
+ *.log 
